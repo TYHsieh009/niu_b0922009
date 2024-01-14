@@ -93,7 +93,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -104,6 +104,7 @@
     <gazebo reference="left_wheel">
         <material>Gazebo/Blue</material>
     </gazebo>
+
 
 
 
@@ -126,7 +127,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
